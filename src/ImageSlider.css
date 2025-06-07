@@ -1,0 +1,41 @@
+.imgDiv {
+  width: 50%;
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0px auto;
+  transition: all 200ms ease-in-out;
+}
+
+.imgDiv > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 50px;
+}
+
+.btnDiv > button {
+  width: 50px;
+  aspect-ratio: 1/1;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.btnDiv > button:hover {
+  transform: scale(1.25);
+}
+
+.btnDiv > button:disabled {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: not-allowed;
+  transform: none;
+}
